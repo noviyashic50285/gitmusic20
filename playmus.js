@@ -9,11 +9,11 @@ const playvBtnEl = document.getElementById("play");
 const nextvBtnEl = document.getElementById("next");
 const songs = [
   {
-    path: "music/mushk_01.mp3",
+    path: "music/hochuvseznat.mp3",
     displayName: "Хочу всё знать",
   },
   {
-    path: "music/mushk_02.mp3",
+    path: "music/etotgorod.mp3",
     displayName: "Этот город",
   },
   {
