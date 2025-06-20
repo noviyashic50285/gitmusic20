@@ -20,124 +20,100 @@ let curr_track = document.createElement('audio');
 
 let track_list = [
   {
-    name: "Мушкетёры 1",
-    artist: "",
+    name: "О пустяках",
+    artist: "Из фильма",
     image: "music/pic01.jpg",
-    path: "music/mushk_01.mp3"
+    path: "music/opustakah.mp3"
   },
   {
-    name: "Мушкетёры 2",
-    artist: "",
+    name: "Небылицы",
+    artist: "Из фильма",
     image: "music/pic02.jpg",
-    path: "music/mushk_02.mp3"
+    path: "music/nebelitsi.mp3"
   },
   {
-    name: "Мушкетёры 3",
-    artist: "",
+    name: "Врунгель 1",
+    artist: "Аудиосказка",
     image: "music/pic03.jpg",
-    path: "music/mushk_03.mp3",
+    path: "music/vrungel01.mp3",
   },
   {
-    name: "Мушкетёры 4",
-    artist: "",
+    name: "Врунгель 2",
+    artist: "Аудиосказка",
     image: "music/pic04.jpg",
-    path: "music/mushk_04.mp3",
+    path: "music/vrungel02.mp3",
   },
   {
-    name: "Мушкетёры 5",
-    artist: "",
+    name: "Врунгель 3-4",
+    artist: "Аудиосказка",
     image: "music/pic05.jpg",
-    path: "music/mushk_05.mp3",
+    path: "music/vrungel0304.mp3",
   },
   {
-    name: "Мушкетёры 6",
-    artist: "",
+    name: "Врунгель 8",
+    artist: "Аудиосказка",
     image: "music/pic06.jpg",
-    path: "music/mushk_06.mp3",
+    path: "music/vrungel08.mp3",
   },
   {
-    name: "Мушкетёры 7",
-    artist: "",
+    name: "Врунгель 13-14",
+    artist: "Аудиосказка",
     image: "music/pic07.jpg",
-    path: "music/mushk_07.mp3",
+    path: "music/vrungel1314.mp3",
   },
   {
-    name: "Мушкетёры 8 21",
-    artist: "",
+    name: "Врунгель 15",
+    artist: "Аудиосказка",
     image: "music/pic08.jpg",
-    path: "music/mushk_08_21.mp3",
+    path: "music/vrungel15.mp3",
   },
   {
-    name: "Мушкетёры 9",
-    artist: "",
+    name: "Врунгель 17",
+    artist: "Аудиосказка",
     image: "music/pic09.jpg",
-    path: "music/mushk_09.mp3",
+    path: "music/vrungel17.mp3",
   },
   {
-    name: "Мушкетёры 10",
-    artist: "",
+    name: "Всё не так у взрослых",
+    artist: "ВИА «Синяя птица»",
     image: "music/pic10.jpg",
-    path: "music/mushk_10.mp3",
+    path: "music/kakuvzroslih.mp3",
   },
   {
-    name: "Мушкетёры 11",
-    artist: "",
+    name: "Неприятность эту мы переживём",
+    artist: "Из мультфильма",
     image: "music/pic11.jpg",
-    path: "music/mushk_11.mp3",
+    path: "music/neprper.mp3",
   },
   {
-    name: "Мушкетёры 12",
-    artist: "",
+    name: "Живи в волшебном ящичке",
+    artist: "Из мультфильма",
     image: "music/pic12.jpg",
-    path: "music/mushk_12.mp3",
+    path: "music/volshyashik.mp3",
   },
   {
-    name: "Мушкетёры 13",
-    artist: "",
+    name: "В порту",
+    artist: "Из мультфильма",
     image: "music/pic13.jpg",
-    path: "music/mushk_13.mp3",
+    path: "music/vportu.mp3",
   },
   {
-    name: "Мушкетёры 14",
-    artist: "",
+    name: "Волшебник",
+    artist: "Из фильма",
     image: "music/pic14.jpg",
-    path: "music/mushk_14.mp3",
+    path: "music/volshebnik.mp3",
   },
   {
-    name: "Мушкетёры 15",
-    artist: "",
+    name: "Дуэт Пончика и Сиропчика",
+    artist: "Из фильма",
     image: "music/pic15.jpg",
-    path: "music/mushk_15.mp3",
+    path: "music/ponchsirop.mp3",
   },
   {
-    name: "Мушкетёры 16",
-    artist: "",
+    name: "Если с другом вышел в путь",
+    artist: "Детский хор",
     image: "music/pic16.jpg",
-    path: "music/mushk_16.mp3",
-  },
-  {
-    name: "Мушкетёры 17",
-    artist: "",
-    image: "music/pic17.jpg",
-    path: "music/mushk_17.mp3",
-  },
-  {
-    name: "Мушкетёры 18",
-    artist: "",
-    image: "music/pic18.jpg",
-    path: "music/mushk_18.mp3",
-  },
-  {
-    name: "Мушкетёры 19",
-    artist: "",
-    image: "music/pic19.jpg",
-    path: "music/mushk_19.mp3",
-  },
-  {
-    name: "Мушкетёры 20",
-    artist: "",
-    image: "music/pic20.jpg",
-    path: "music/mushk_20.mp3",
+    path: "music/sdrugom.mp3",
   },
 ];
 
@@ -151,10 +127,8 @@ function random_bg_color() {
   // Construct a color withe the given values
   let bgColor = "rgb(" + red + "," + green + "," + blue + ")";
 
-  var elem = document.getElementById('player');
-  elem.style.background = bgColor;
-
-  // document.body.style.background = bgColor;
+  // Set the background to that color
+  document.body.style.background = bgColor;
 }
 
 function loadTrack(track_index) {
