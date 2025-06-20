@@ -1,31 +1,27 @@
-/* body {
-  background-color: lightgreen;
-  transition: background-color .5s;
-} */
-.player {
+body {
   background-color: lightgreen;
   /* Smoothly transition the background color */
   transition: background-color .5s;
-  height: 35vh;
+}
+.player {
+  height: 95vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-margin: 1rem;
-border: 3px solid rgb(35, 101, 22);
-border-radius: 1rem;
 }
 .details {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-top: 5px;
+  margin-top: 25px;
 }
 .track-art {
-  margin: 0px;
-  height: 0px;
-  width: 0px;
+  margin: 25px;
+  height: 250px;
+  width: 250px;
+  /* background-image: url("https://images.pexels.com/photos/262034/pexels-photo-262034.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); */
   background-size: cover;
   border-radius: 15%;
 }
@@ -33,7 +29,7 @@ border-radius: 1rem;
   font-size: 1rem;
 }
 .track-name {
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 .track-artist {
   font-size: 1.5rem;
@@ -44,7 +40,7 @@ border-radius: 1rem;
   align-items: center;
 }
 .playpause-track, .prev-track, .next-track {
-  padding: 5px;
+  padding: 25px;
   opacity: 0.8;
   /* Smoothly transition the opacity */
   transition: opacity .2s;
@@ -75,8 +71,8 @@ border-radius: 1rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 5px;
-  height: 5px;
+  width: 15px;
+  height: 15px;
   background: white;
   cursor: pointer;
   border-radius: 50%;
@@ -85,10 +81,10 @@ border-radius: 1rem;
   opacity: 1.0;
 }
 .seek_slider {
-  width: 90%;
+  width: 60%;
 }
 .volume_slider {
-  width: 80%;
+  width: 30%;
 }
 .current-time, .total-duration {
   padding: 10px;
