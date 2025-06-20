@@ -23,13 +23,13 @@ let track_list = [
     name: "Мушкетёры 1",
     artist: "",
     image: "music/pic01.jpg",
-    path: "music/mushk_01.mp3"
+    path: "music/hochuvseznat.mp3"
   },
   {
     name: "Мушкетёры 2",
     artist: "",
     image: "music/pic02.jpg",
-    path: "music/mushk_02.mp3"
+    path: "music/etotgorod.mp3"
   },
   {
     name: "Мушкетёры 3",
@@ -115,6 +115,30 @@ let track_list = [
     image: "music/pic16.jpg",
     path: "music/mushk_16.mp3",
   },
+  {
+    name: "Мушкетёры 17",
+    artist: "",
+    image: "music/pic17.jpg",
+    path: "music/mushk_17.mp3",
+  },
+  {
+    name: "Мушкетёры 18",
+    artist: "",
+    image: "music/pic18.jpg",
+    path: "music/mushk_18.mp3",
+  },
+  {
+    name: "Мушкетёры 19",
+    artist: "",
+    image: "music/pic19.jpg",
+    path: "music/mushk_19.mp3",
+  },
+  {
+    name: "Мушкетёры 20",
+    artist: "",
+    image: "music/pic20.jpg",
+    path: "music/mushk_20.mp3",
+  },
 ];
 
 function random_bg_color() {
@@ -127,8 +151,10 @@ function random_bg_color() {
   // Construct a color withe the given values
   let bgColor = "rgb(" + red + "," + green + "," + blue + ")";
 
-  // Set the background to that color
-  document.body.style.background = bgColor;
+  var elem = document.getElementById('player');
+  elem.style.background = bgColor;
+
+  // document.body.style.background = bgColor;
 }
 
 function loadTrack(track_index) {
